@@ -1,0 +1,5 @@
+{
+    "openai_api_key": "sk-proj-EtnRjZB5Wdw2kZCgPUO1T3BlbkFJI7f0IxQsqjljD6fMsKZg",
+    "go_api_key": "80f54b240b859c3a7812e55ce46ecb27a5deeb82abd34553ace2938c7490e59c",
+    "goapi_endpoint": "https://api.midjourneyapi.xyz/sd/txt2img"
+}
