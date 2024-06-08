@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <title>Flask Form</title>
+</head>
+
+<body>
+    <div class="center-form">
+        <form action="/submit" method="post">
+            <input name="prompt_name" class="input_name" type="text" placeholder="Enter a Sentence" required><br>
+            <input name="prompt_name" class="input_name" type="text" placeholder="Enter another Sentence" required><br>
+            <!-- Add more input fields as needed -->
+            <input name="prompt_submit" class="input_submit" type="submit" value="Submit">
+        </form>
+        {% if error %}
+        <p>{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+
+</html>

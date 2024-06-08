@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <style>
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .generated-image {
+            max-width: 200px;
+            /* Adjust as needed */
+            max-height: 200px;
+            /* Adjust as needed */
+        }
+    </style>
+    <title>Generated Images</title>
+</head>
+
+<body>
+    <div class="center-form">
+        <h2>Generated Images</h2>
+        <div class="image-gallery">
+            {% for image in images %}
+            <div class="image-container">
+                <img src="{{ image }}" alt="Generated Image" class="generated-image" />
+            </div>
+            {% endfor %}
+        </div>
+        <a href="/" class="input_submit">Generate More</a>
+    </div>
+</body>
+
+</html>
